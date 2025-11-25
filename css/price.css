@@ -1,0 +1,160 @@
+:root {
+  /* Переменные добавлять здесь */
+  /* Типографика */
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 34px;
+  --text-3xl: 44px;
+  --text-4xl: 54px;
+
+  /* Цвета */
+  --color-primary: #734cf5;
+  --color-secondary: #75859d;
+  --color-text-dark: #134178;
+  --color-white: #fff;
+  --color-background: #f6f6f6;
+
+  /* Отступы */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-base: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 44px;
+  --spacing-4xl: 60px;
+
+  /* Закругления */
+  --border-radius-lg: 8px;
+  --border-radius-lg: 24px;
+
+  /* Заголовок */
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.heading__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.heading__title {
+  font-weight: 500;
+  font-size: var(--text-3xl);
+  line-height: 48px;
+  color: var(--color-text-dark);
+}
+
+.heading__description {
+  font-weight: 400;
+  line-height: 24px;
+  color: #75859d;
+  margin-bottom: 24px;
+}
+
+.heading__actions {
+  padding: 16px;
+}
+
+.prices {
+  margin: 60px var(--spacing-base);
+}
+
+.price-content-list {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.price-content-item {
+  border-radius: 24px;
+  flex: 1;
+}
+
+.price-content-list > .price-content-item:nth-of-type(1) {
+  background-color: #ffffff;
+  box-shadow: 0 9px 20px #d7d7d7;
+}
+.price-content-list > .price-content-item:nth-of-type(2) {
+  background-color: #734cf5;
+  box-shadow: 0 9px 20px rgba(115, 76, 245, 0.4);
+  color: white;
+}
+.price-content-list > .price-content-item:nth-of-type(3) {
+  background-color: #134178;
+  box-shadow: 0 9px 20px rgba(11, 40, 75, 0.4);
+  color: white;
+}
+
+.price-content-item {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.summ {
+  display: flex;
+  gap: 4px;
+}
+.summ__chislo {
+  font-size: var(--text-2xl);
+  line-height: 40px;
+  font-weight: 500;
+}
+.summ__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  align-self: flex-end;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
+}
+
+.procherk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.procherk div {
+  font-size: 16px;
+  font-weight: 500;
+}
+.advantages_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.advantages_item {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 920px) {
+  .price-content-list {
+    flex-direction: column;
+  }
+  .heading {
+    padding: var(--spacing-base);
+  }
+}
