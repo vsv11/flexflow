@@ -109,7 +109,7 @@
       </div>
     </header>
     <main>
-      <div class="hero-section">
+      <section class="hero-section">
         <div class="hero-section_content container">
           <h1>
             Digital агенство <br />
@@ -125,8 +125,8 @@
             <button class="button button--primary">Расчет стоимости</button>
           </div>
         </div>
-      </div>
-      <div class="companies">
+      </section>
+      <section class="companies">
         <div class="container">
           <p class="companies-title">
             Более 400+ компаний по всему миру доверяют нам
@@ -154,8 +154,8 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="services">
+      </section>
+      <section class="services">
         <div class="container">
           <h2 class="services-title">Услуги</h2>
           <p class="services-subtitle">Что мы предлагаем</p>
@@ -244,8 +244,8 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="survey">
+      </section>
+      <section class="survey">
         <div class="survey-content container">
           <div>
             <h2 class="survey-title">
@@ -268,8 +268,8 @@
             class="survey-image"
           />
         </div>
-      </div>
-      <div class="price">
+      </section>
+      <section class="price">
         <div class="price-content container">
           <img src="./images/image.png" alt="Опрос" class="price-image" />
           <div>
@@ -288,7 +288,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Портфолио</h2>
@@ -394,26 +394,6 @@
         </div>
       </footer>
     </main>
-    <script>
-      const mobileMenu = document.querySelector(".mobile-menu");
-      const openMobileMenuButton = document.querySelector(
-        ".header .menu-button"
-      );
-      const closeMobileMenuButton = document.querySelector(
-        ".mobile-menu .clouse-button"
-      );
-      if (mobileMenu) {
-        if (openMobileMenuButton) {
-          openMobileMenuButton.addEventListener("click", () => {
-            mobileMenu.classList.add("open");
-          });
-        }
-        if (closeMobileMenuButton) {
-          closeMobileMenuButton.addEventListener("click", () => {
-            mobileMenu.classList.remove("open");
-          });
-        }
-      }
-    </script>
+    <script src="/script/mobile-menu.js"></script>
   </body>
 </html>
