@@ -1,0 +1,155 @@
+:root {
+  /* Переменные добавлять здесь */
+  /* Типографика */
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 34px;
+  --text-3xl: 44px;
+  --text-4xl: 54px;
+
+  /* Цвета */
+  --color-primary: #734cf5;
+  --color-secondary: #75859d;
+  --color-text-dark: #134178;
+  --color-white: #fff;
+  --color-background: #f6f6f6;
+
+  /* Отступы */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-base: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 44px;
+  --spacing-4xl: 60px;
+
+  /* Закругления */
+  --border-radius-lg: 8px;
+  --border-radius-lg: 24px;
+
+  /* Заголовок */
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.heading__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.heading__title {
+  font-weight: 500;
+  font-size: var(--text-3xl);
+  line-height: 48px;
+  color: var(--color-text-dark);
+}
+
+.heading__description {
+  font-weight: 400;
+  line-height: 24px;
+  color: #75859d;
+  margin-bottom: 24px;
+}
+
+.heading__actions {
+  padding: 16px;
+}
+
+.actions-lits {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  padding: 60px var(--spacing-base);
+}
+
+.info-content__1,
+.info-content__2 {
+  display: flex;
+  gap: 40px;
+
+  padding-bottom: 0;
+}
+
+.info-content__1 {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.info-content-list {
+  display: flex;
+  gap: var(--spacing-2xl);
+  justify-content: space-between;
+  margin: 0;
+}
+.info-content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing-base);
+  flex: 1;
+}
+
+.news-title {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.news-day {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.news-description {
+  font-weight: 400px;
+  color: var(--color-secondary);
+}
+.news-date {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+.info-content-item img {
+  max-width: 100%;
+  height: 260px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.news-title__3 {
+  display: flex;
+  color: var(--color-primary);
+  font-weight: 500;
+  gap: 16px;
+}
+
+@media (max-width: 890px) {
+  .actions-lits {
+    flex-wrap: wrap;
+  }
+  .info-content-list {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 670px) {
+  .heading__title {
+    font-size: var(--text-2xl);
+  }
+}
